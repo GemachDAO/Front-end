@@ -78,6 +78,14 @@ const Header = ({ currentPage = '' }) => {
         </HeaderBrandContainer>
         <HeaderNavContainer>
           <HeaderNav active={isMobileNavActive}>
+            <NextLink href="https://gemach.io/app.html" passHref={true}>
+              <HeaderNavItem
+                target="_blank"
+                onClick={() => setMobileNavIsActive(false)}
+              >
+                Interest, Loans, & Staking
+              </HeaderNavItem>
+            </NextLink>
             <NextLink href="/mission">
               <HeaderNavItem
                 tabIndex="0"

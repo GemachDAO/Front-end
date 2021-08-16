@@ -75,19 +75,6 @@ export const HeaderNavItem = styled.a`
   }
 `
 
-export const GovLink = styled.a`
-  ${fontStyles.H3}
-  color: ${({ active }) => (active ? colors.gemachblue : colors.white)};
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  padding: 12px 30px;
-  &:hover {
-    cursor: pointer;
-    color: ${colors.gemachblue};
-  }
-`
 export const DropdownCarot = styled.div`
   display: inline-block;
   padding-left: 15px;
