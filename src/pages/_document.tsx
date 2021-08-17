@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document'
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
+import { GA_TRACKING_ID } from '../utils/gtag'
 
 class GemachDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -38,6 +39,23 @@ class GemachDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+          `,
+            }}
+          />
         </Head>
         <body>
           <noscript>Oops, you need Javascript to run this site.</noscript>
