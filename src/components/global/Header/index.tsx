@@ -78,7 +78,7 @@ const Header = ({ currentPage = '' }) => {
         </HeaderBrandContainer>
         <HeaderNavContainer>
           <HeaderNav active={isMobileNavActive}>
-            <NextLink href="https://gemach.io/app.html" passHref={true}>
+            <NextLink href="https://stake.gemach.io/" passHref={true}>
               <HeaderNavItem
                 target="_blank"
                 onClick={() => setMobileNavIsActive(false)}
