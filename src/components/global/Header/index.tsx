@@ -83,7 +83,7 @@ const Header = ({ currentPage = '' }) => {
                 target="_blank"
                 onClick={() => setMobileNavIsActive(false)}
               >
-                Interest, Loans, & Staking
+                Interest-Free Loans and Staking
               </HeaderNavItem>
             </NextLink>
             <NextLink href="/mission">

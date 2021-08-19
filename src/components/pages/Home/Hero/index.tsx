@@ -14,11 +14,17 @@ const Section = () => {
     <SectionWrapper as="section">
       <SectionContainer>
         <Eyebrow>The Future Will Remain Unbanked</Eyebrow>
-        <Heading>The Gemach DAO welcomes you</Heading>
+        <Heading>Introducing Gemach DAO</Heading>
         <Description>
-          Gemach DAO is a decentralized community driving adoption and awareness
-          of bankless money systems like Ethereum, Bitcoin and DeFi through
-          media, culture, and education.
+          Gemach DAO is a community-driven initiative that aims to organize,
+          educate and empower people in the use of decentralized finance. This
+          initiative will bring together leaders from around the world together
+          to drive awareness, adoption and education around the concepts behind
+          decentralized finance (DeFi) ecosystems. Our mission is to provide an
+          open ecosystem for anyone interested in learning about and
+          participating in DeFi activities from borrowing, to lending and
+          staking. Gemach DAO aims to build bridges between communities by
+          providing tools for the Web3 future.
         </Description>
         <ButtonContainer>
           <NextLink href="https://telegram.me/collablandbot?start=VFBDI1RFTCNDT01NIy0xMDAxNTMxNDQ1NjM2">
