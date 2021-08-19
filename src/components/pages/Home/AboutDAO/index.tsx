@@ -21,30 +21,19 @@ const Section = () => {
         />
         <Col2>
           <Heading>Gemach DAO</Heading>
-          <Subheading>
-            We have entered an era of internet-scale organizations.
-          </Subheading>
+          <Subheading>We have entered into the sharing economy.</Subheading>
           <Paragraph>
-            Ethereum's coordination power allows internet strangers with shared
-            values and goals to organize under a common banner, and enables them
-            to steer the world towards their future aspirations. Internet
-            communities align with digital tokens and use them as tools to focus
-            capital and labor into productive outputs in pursuit of a shared
-            vision. Under community consensus, the private skills and resources
-            of an individual can coalesce into public collective power and
-            impart change upon the world.
+            Gemach DAO is a shared public good ecosystem created to leverage
+            blockchain technology. The GMAC token is our lifeblood and the
+            governance token that will direct the future of our ecosystem
+            through proposals, voting, and in coordinating economic activity
+            under a single offering. The GMAC token is a borderless token where
+            every participant can contribute to its growth and development in
+            proportion to their participation. Our shared ecosystem allows us to
+            pool our resources and diverse talents together and realize our
+            combined potential under a common goal to create opportunities for
+            everyone around the world.
           </Paragraph>
-          <Paragraph>
-            With this, humanity has unlocked the capability of building new,
-            internet-scaled institutions aligned with the values of its members.
-          </Paragraph>
-          <Subheading
-            css={`
-              margin-bottom: 30px;
-            `}
-          >
-            We need this now, more than ever...{' '}
-          </Subheading>
           <NextLink href="/mission">
             <a>
               <Button theme="white">Read More</Button>

@@ -19,9 +19,9 @@ const Section = () => {
                 margin-bottom: 20px;
               `}
             >
-              Gemach is the native token of the Gemach DAO, which acts as a tool
-              to coordinate activity and is awarded to community members for
-              participation in the bankless movement.
+              Gemach is the native token of Gemach DAO and is an instrument to
+              coordinate the activity among its community members for
+              participation in the unbanked Web3 movement.
             </Paragraph>
           </Col1>
         </Col2Row>
