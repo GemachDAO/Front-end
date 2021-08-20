@@ -39,6 +39,15 @@ class GemachDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />
+          <meta property="og:title" content="Gemach DAO" />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:description"
+            content="Gemach DAO is a community-driven initiative that aims to organize, educate and empower people in the use of decentralized finance."
+          />
+          <meta property="og:url" content="https://gemach.io/" />
+          <meta property="og:image" content="/images/gemach-banner3.jpg" />
+          <meta name="twitter:card" content="summary_large_image"></meta>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
