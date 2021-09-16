@@ -17,6 +17,7 @@ import {
   DropdownNavItem,
   DropdownContainer,
 } from './style'
+import Button from 'src/components/parts/Button'
 
 const DropdownCarotIcon = ({ active = false }) => (
   <img
@@ -112,15 +113,34 @@ const Header = ({ currentPage = '' }) => {
               >
                 <li>
                   <NextLink href="https://snapshot.org/#/gemach.eth">
-                    <a onClick={handleDropdownItemClick} target="_blank">
+                    <a
+                      onClick={handleDropdownItemClick}
+                      target="_blank"
+                      style={{ fontSize: '18px' }}
+                    >
                       Vote
                     </a>
                   </NextLink>
                 </li>
               </DropdownContainer>
             </DropdownNavItem>
+            <NextLink
+              href="https://app.uniswap.org/#/swap?inputCurrency=0xd96e84ddbc7cbe1d73c55b6fe8c64f3a6550deea"
+              passHref={true}
+            >
+              <HeaderNavItem
+                target="_blank"
+                onClick={() => setMobileNavIsActive(false)}
+              >
+                <Button theme="uniswap" thin={true}>
+                  Buy on Uniswap
+                </Button>
+              </HeaderNavItem>
+            </NextLink>
+            <HeaderNavItem>
+              <ConnectWalletButton />
+            </HeaderNavItem>
           </HeaderNav>
-          <ConnectWalletButton />
         </HeaderNavContainer>
       </HeaderContainer>
     </HeaderWrapper>
