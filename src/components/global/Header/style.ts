@@ -31,7 +31,7 @@ export const MobileNavButton = styled.div`
 `
 export const LogoContainer = styled.div`
   max-height: 60px;
-  margin-top: -4em;
+  margin-top: -4.25em;
 `
 export const HeaderNavContainer = styled.div`
   flex: 1;

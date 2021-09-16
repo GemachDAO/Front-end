@@ -6,6 +6,7 @@ import {
   GrayButton,
   DiscordButton,
   GradientButton,
+  UniswapButton,
 } from './style'
 
 const Button = ({
@@ -81,6 +82,17 @@ const Button = ({
       >
         {children}
       </GradientButton>
+    )
+  if ('uniswap' === theme)
+    return (
+      <UniswapButton
+        thin={thin}
+        shadow={shadow}
+        disabled={disabled}
+        {...restProps}
+      >
+        {children}
+      </UniswapButton>
     )
   return (
     <RedButton thin={thin} shadow={shadow} disabled={disabled} {...restProps}>
