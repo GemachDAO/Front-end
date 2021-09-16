@@ -125,7 +125,7 @@ const Header = ({ currentPage = '' }) => {
               </DropdownContainer>
             </DropdownNavItem>
             <NextLink
-              href="https://app.uniswap.org/#/swap?inputCurrency=0xd96e84ddbc7cbe1d73c55b6fe8c64f3a6550deea"
+              href="https://app.uniswap.org/#/swap?outputCurrency=0xd96e84ddbc7cbe1d73c55b6fe8c64f3a6550deea"
               passHref={true}
             >
               <HeaderNavItem
