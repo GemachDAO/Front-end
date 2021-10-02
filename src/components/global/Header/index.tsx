@@ -17,7 +17,6 @@ import {
   DropdownNavItem,
   DropdownContainer,
 } from './style'
-import Button from 'src/components/parts/Button'
 
 const DropdownCarotIcon = ({ active = false }) => (
   <img
@@ -31,10 +30,8 @@ const DropdownCarotIcon = ({ active = false }) => (
 const Header = ({ currentPage = '' }) => {
   const governanceDropdownRef = useRef()
 
-  const [
-    isGovernanceDropdownActive,
-    setGovernanceDropdownIsActive,
-  ] = useDetectOutsideClick(governanceDropdownRef, false)
+  const [isGovernanceDropdownActive, setGovernanceDropdownIsActive] =
+    useDetectOutsideClick(governanceDropdownRef, false)
 
   const handleGovernanceDropdownClick = () => {
     setGovernanceDropdownIsActive(!isGovernanceDropdownActive)
@@ -124,24 +121,11 @@ const Header = ({ currentPage = '' }) => {
                 </li>
               </DropdownContainer>
             </DropdownNavItem>
-            <NextLink
-              href="https://app.uniswap.org/#/swap?outputCurrency=0xd96e84ddbc7cbe1d73c55b6fe8c64f3a6550deea"
-              passHref={true}
-            >
-              <HeaderNavItem
-                target="_blank"
-                onClick={() => setMobileNavIsActive(false)}
-              >
-                <Button theme="uniswap" thin={true}>
-                  Buy on Uniswap
-                </Button>
-              </HeaderNavItem>
-            </NextLink>
-            <HeaderNavItem>
-              <ConnectWalletButton />
-            </HeaderNavItem>
           </HeaderNav>
         </HeaderNavContainer>
+        <HeaderNavItem>
+          <ConnectWalletButton />
+        </HeaderNavItem>
       </HeaderContainer>
     </HeaderWrapper>
   )
