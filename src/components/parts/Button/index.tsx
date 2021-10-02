@@ -7,6 +7,7 @@ import {
   DiscordButton,
   GradientButton,
   UniswapButton,
+  SushiswapButton,
 } from './style'
 
 const Button = ({
@@ -93,6 +94,17 @@ const Button = ({
       >
         {children}
       </UniswapButton>
+    )
+  if ('sushiswap' === theme)
+    return (
+      <SushiswapButton
+        thin={thin}
+        shadow={shadow}
+        disabled={disabled}
+        {...restProps}
+      >
+        {children}
+      </SushiswapButton>
     )
   return (
     <RedButton thin={thin} shadow={shadow} disabled={disabled} {...restProps}>

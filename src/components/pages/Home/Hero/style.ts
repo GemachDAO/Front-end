@@ -36,3 +36,16 @@ export const ButtonContainer = styled.div`
     margin-bottom: 15px;
   }
 `
+export const Unicorn = styled.img`
+  height: 35px;
+  padding-right: 8px;
+  float: left;
+`
+
+export const BtnText = styled.p`
+  margin-top: 3px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+`

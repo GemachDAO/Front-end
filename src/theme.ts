@@ -14,6 +14,8 @@ export const colors = {
   discord: '#7289DA',
   blue: '#393FCB',
   gemachblue: '#273C62',
+  transparent: 'rgba(0, 0, 0, 0)',
+  uniswappink: '#FF007A',
 }
 
 export const gradients = {

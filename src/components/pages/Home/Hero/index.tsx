@@ -7,6 +7,8 @@ import {
   Eyebrow,
   Description,
   ButtonContainer,
+  Unicorn,
+  BtnText,
 } from './style'
 
 const Section = () => {
@@ -27,10 +29,25 @@ const Section = () => {
           providing tools for the Web3 future.
         </Description>
         <ButtonContainer>
-          <NextLink href="https://telegram.me/collablandbot?start=VFBDI1RFTCNDT01NIy0xMDAxNTMxNDQ1NjM2">
-            <a>
-              <Button theme="discord" shadow>
-                Join the Telegram
+          <NextLink
+            href="https://app.uniswap.org/#/swap?outputCurrency=0xd96e84ddbc7cbe1d73c55b6fe8c64f3a6550deea"
+            passHref={true}
+          >
+            <a target="_blank">
+              <Button theme="uniswap" shadow>
+                <Unicorn src="images/uniswap-uni-logo.png" />
+                <BtnText>Buy on Uniswap </BtnText>
+              </Button>
+            </a>
+          </NextLink>
+          <NextLink
+            href="https://app.sushi.com/swap?outputCurrency=0xd96e84ddbc7cbe1d73c55b6fe8c64f3a6550deea"
+            passHref={true}
+          >
+            <a target="_blank">
+              <Button theme="sushiswap" shadow>
+                <Unicorn src="images/sushiswap-sushi-logo.png" />
+                <BtnText>Buy on Sushiswap</BtnText>
               </Button>
             </a>
           </NextLink>
