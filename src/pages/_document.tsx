@@ -51,6 +51,30 @@ class GemachDocument extends Document {
             content="https://gemach.io/images/gemach-banner3.jpg"
           />
           <meta name="twitter:card" content="summary_large_image"></meta>
+          <NextScript />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function (w, d, s, o, f, js, fjs) {
+                w["botsonic_widget"] = o;
+                w[o] =
+                  w[o] ||
+                  function () {
+                    (w[o].q = w[o].q || []).push(arguments);
+                  };
+                (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+                js.id = o;
+                js.src = f;
+                js.async = 1;
+                fjs.parentNode.insertBefore(js, fjs);
+              })(window, document, "script", "Botsonic", "https://d1m9uqhmlogh4h.cloudfront.net/CDN/botsonic.min.js");
+              Botsonic("init", {
+                serviceBaseUrl: "https://api.writesonic.com",
+                token: "758a8f30-c7d7-478c-97ca-5ad54f7d44c6",
+              });
+            `,
+            }}
+          />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
