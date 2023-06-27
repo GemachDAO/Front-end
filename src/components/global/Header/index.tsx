@@ -30,8 +30,10 @@ const DropdownCarotIcon = ({ active = false }) => (
 const Header = ({ currentPage = '' }) => {
   const governanceDropdownRef = useRef()
 
-  const [isGovernanceDropdownActive, setGovernanceDropdownIsActive] =
-    useDetectOutsideClick(governanceDropdownRef, false)
+  const [
+    isGovernanceDropdownActive,
+    setGovernanceDropdownIsActive,
+  ] = useDetectOutsideClick(governanceDropdownRef, false)
 
   const handleGovernanceDropdownClick = () => {
     setGovernanceDropdownIsActive(!isGovernanceDropdownActive)
